@@ -1,0 +1,62 @@
+
+.container {
+  width: 100vw;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  font-family: "Comic Sans MS", cursive;
+}
+
+.card {
+  max-width: 400px;
+  max-height: 250px;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 2px solid #ddd; /* Border color input */
+  border-radius: 8px; /* Border radius input */
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #333;
+  background-color: #f4f4f4; /* Warna input */
+}
+
+input:focus {
+  border-color: #00bffc; /* Warna input saat focus */
+}
+
+button {
+  background-color: #00c2ff; /* Warna button */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px; /* Border radius button */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3ccfff; /* Warna button saat hover */
+}

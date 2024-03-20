@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card">
+    <h2>Login</h2>
+
+    <form [formGroup]="loginForm">
+      <input type="text" id="username" name="email" placeholder="email"  formControlName="EmailId">
+      <input type="password" id="password" name="password" placeholder="Password" formControlName="Password"  >
+      <button type="submit" (click)="login()">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="users-container">
+  <div class="user-container" *ngFor="let client of clients">
+    <label>First Name:</label>
+    <input type="text" [value]="client.firstName" [readOnly]="true">
+
+
+  </div>
+
+</div>
