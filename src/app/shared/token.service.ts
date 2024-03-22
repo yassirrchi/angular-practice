@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
+import {AuthService} from "../auth/services/auth.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class TokenService {
+
+
 
   constructor() { }
 
@@ -29,6 +32,13 @@ export class TokenService {
   setUserEmail(email: string) {
     localStorage.setItem(environment.emailId, email);
   }
+  clearTheStorage() {
+    localStorage.clear();
+  }
+
+
+
+
 
 
 

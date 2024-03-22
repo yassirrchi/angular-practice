@@ -24,10 +24,18 @@ export const tokenInterceptor: HttpInterceptorFn = (req, next) => {
         if(error.status === 401) {
          return authSrv.getRefreshToken().pipe(
            catchError((err: any) => {
-             if(error.status == 400) {
+
+             if(err.status === 400) {
+               //console.log(tokenService.getRefreshStatus())
+              // tokenService.setRefreshExpired(true);
+
+
+
+
                router.navigate(['/auth/login']);
-               localStorage.clear();
+               tokenService.clearTheStorage();
              }
+
              return throwError(() => err);
            }),
            switchMap((data: any) => {

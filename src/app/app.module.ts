@@ -7,11 +7,15 @@ import {AuthModule} from "./auth/auth.module";
 import { HomeComponent } from './home/home.component';
 import {provideHttpClient, withInterceptors} from "@angular/common/http";
 import {tokenInterceptor} from "./shared/token.interceptor";
+import { NavbarComponent } from './ui/navbar/navbar.component';
+import { HideIfNotAdminDirective } from './shared/directives/hide-if-not-admin.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    HideIfNotAdminDirective
   ],
   imports: [
     BrowserModule,
